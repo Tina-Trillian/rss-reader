@@ -3,10 +3,10 @@ html, body {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	background: #FAFAFA;
 	font-family: 'Helvetica Neue', arial, sans-serif;
 	font-weight: 400;
 	color: #444;
+	background-color: rgb(228, 242, 247);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -15,7 +15,80 @@ html, body {
 	box-sizing: border-box;
 }
 
-#app {
-	height: 100%;
-	background-color: lightblue
+a {
+	text-decoration: none;
+	color: white;
+}
+
+#reader {
+	padding: 35px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card {
+	border-radius: 5px;
+	margin: 10px 0px;
+	width: 80%;
+	height: 60vh;
+	position: relative;
+	color: white;
+	background-size: cover;
+}
+
+.card-img {
+	width: 100%;
+	position: absolute;
+	z-index:-1;
+
+}
+
+.card-headline {
+	width: 80%;
+	margin: 5%;
+	text-shadow: -1px 0 rgba(0, 0, 0, 0.397), 0 1px rgba(0, 0, 0, 0.397), 1px 0 rgba(0, 0, 0, 0.397), 0 -1px rgba(0, 0, 0, 0.397);
+}
+
+.card h2 {
+	font-size: 1.8em;
+}
+
+.card h3 {
+	font-size: 1.2em;
+	color: rgb(224, 220, 220);
+}
+
+.card-text {
+	line-height: 1.5em;
+	font-size: 1.1em;
+	padding: 5%;
+	background-color: rgba(0, 0, 0, 0.555);
+	border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+	.card-text {
+		background-color: red;
+		display: none;
+	}
+}
+
+.card-content {
+	width: 90%;
+	margin: 10px auto 0px auto;
+}
+
+.btn {
+	border: none;
+	color: white;
+	border-radius: 5px;
+	font-weight: bold;
+	background-color: rgb(170, 170, 247);
+	font-size: 1.1em;
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	padding: 5px;
+	z-index: 4;
 }
