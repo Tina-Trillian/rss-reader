@@ -1,22 +1,17 @@
 # rss-reader
 
-## CLI Commands
+## Tech
 
-``` bash
-# install dependencies
-npm install
+It is a Preact application that reads an RSS feed from https://beta.futurezone.de/rss.xml.
 
-# serve with hot reload at localhost:8080
-npm run dev
+Build with [preact-cli](https://github.com/developit/preact-cli)
 
-# build for production with minification
-npm run build
+To clone this repo: 
 
-# test the production build locally
-npm run serve
+`$ git clone https://github.com/Tina-Trillian/rss-reader
 
-# run tests with jest and preact-render-spy 
-npm run test
-```
+To start:
 
-For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
+`$ cd rss-reader`  
+`$ npm install`  
+`$ npm run dev`
